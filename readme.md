@@ -5,3 +5,5 @@ NOVAPOSHTA API 2.0
 MODULE FOR MAGENTO
 
 [GUIDE](https://github.com/SlavaYurthev/Novaposhta/wiki)
+
+** ADDED SELECT2 AND SEARCH FROM FIRST LETTER IN CITIES
