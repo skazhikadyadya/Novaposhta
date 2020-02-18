@@ -420,4 +420,20 @@ novaposhta.init = function(){
 			}
 		});
 	}
+	
+		function matchStart(params, data) {
+		    params.term = params.term || '';
+		    if (data.text.toUpperCase().indexOf(params.term.toUpperCase()) == 0) {
+		        return data;
+		    }
+		    return false;
+		}
+
+		jQuery("#novaposhta_cities").select2({
+		    matcher: function(params, data) {
+		        return matchStart(params, data);
+		    },
+		});		
+		jQuery('#novaposhta_warehouses').select2(); 	
+	
 }
